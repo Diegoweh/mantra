@@ -47,7 +47,7 @@ export default function Navbar({ items }: NavbarProps) {
                         transition-all duration-300 ease-out
                         ${isActive
                           ? "text-white"
-                          : "text-black/70 hover:text-yellow-800"
+                          : "text-white/70 hover:text-yellow-700"
                         }
                       `}
                     >
@@ -123,7 +123,7 @@ export default function Navbar({ items }: NavbarProps) {
                         transition-all duration-300 cursor-pointer
                         ${isActive
                           ? "bg-gradient-to-r from-[#ceaa96] via-[#b7866f] to-[#8b5641] text-white"
-                          : "text-black/70 hover:text-yellow-800 hover:bg-[#e0cfc1]/10"
+                          : "text-white/70 hover:text-yellow-700 hover:bg-[#e0cfc1]/10"
                         }
                       `}
                     >

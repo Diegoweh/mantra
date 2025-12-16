@@ -50,7 +50,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="bg-gradient-to-r text-[#8b5641] bg-clip-text"
+            className="bg-gradient-to-r text-white bg-clip-text"
           >
             Welcome to
           </motion.span>
@@ -59,7 +59,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="text-[#8b5641]"
+            className="text-white"
           >
             Mantra
           </motion.span>
@@ -70,7 +70,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
-          className="text-lg md:text-xl lg:text-2xl text-[#8b5641] mb-12 max-w-2xl mx-auto"
+          className="text-lg md:text-xl lg:text-2xl text-white mb-12 max-w-2xl mx-auto"
         >
           Experience the perfect blend of elegance and innovation
         </motion.p>
@@ -92,7 +92,7 @@ export default function HeroSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-xl font-semibold text-white backdrop-blur-xl bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300"
+            className="px-8 py-4 rounded-xl font-semibold text-white backdrop-blur-xl bg-black/40 border border-white/20 hover:bg-white/50 transition-all duration-300"
           >
             Learn More
           </motion.button>
@@ -127,33 +127,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="w-1.5 h-1.5 bg-white/50 rounded-full mt-2"
-          />
-        </motion.div>
-      </motion.div>
+      
     </section>
   );
 }
